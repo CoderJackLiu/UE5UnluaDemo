@@ -1,0 +1,3 @@
+[submodule "Plugins/UE5UnluaPlugin"]
+	path = Plugins/UE5UnluaPlugin
+	url = https://github.com/CoderJackLiu/UE5UnluaPlugin.git
