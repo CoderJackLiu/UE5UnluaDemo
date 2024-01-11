@@ -12,13 +12,13 @@ local M = UnLua.Class()
 
 -- 所有绑定到Lua的对象初始化时都会调用Initialize的实例方法
 function M:Initialize()
-    local msg = [[
-    Hello World!
+    -- local msg = [[
+    -- Hello World!
 
-    —— 本示例来自 "Content/Script/Tutorials/01_HelloWorld.lua"
-    ]]
-    print(msg)
-    Screen.Print(msg)
+    -- —— 本示例来自 "Content/Script/Tutorials/01_HelloWorld.lua"
+    -- ]]
+    -- print(msg)
+    -- Screen.Print(msg)
 end
 
 
@@ -28,8 +28,15 @@ end
 -- function M:UserConstructionScript()
 -- end
 
--- function M:ReceiveBeginPlay()
--- end
+function M:ReceiveBeginPlay()
+    -- local msg = [[
+    -- Hello World!
+
+    -- —— 本示例来自 "Content/Script/Tutorials/01_HelloWorld.lua"
+    -- ]]
+    -- print(msg)
+    -- Screen.Print(msg)
+end
 
 -- function M:ReceiveEndPlay()
 -- end

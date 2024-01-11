@@ -9,6 +9,27 @@
 /**
  * 
  */
+
+//define a struct for user info
+USTRUCT(BlueprintType)
+struct FUserInfo
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString Name;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int32 Age;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool bIsMale;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<FString> Skills;
+};
+
+
 UCLASS()
 class UNLUADEMO_API UBaseDataTyps : public UObject
 {

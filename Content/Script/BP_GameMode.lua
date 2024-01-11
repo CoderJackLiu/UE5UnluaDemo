@@ -23,8 +23,13 @@ end
 function M:ReceiveBeginPlay()
     print("TestValue = " .. tostring(self.TestValue), "TestValue2 = " .. tostring(self.TestValue2))
 
-    local myStructInstance = UE4.UClass.Load("/Game/S_Test.S_Test"):GetDefaultObject()
-    print("myStructInstance.TestValue = " .. tostring(myStructInstance.TestValue), "myStructInstance.TestValue2 = " .. tostring(myStructInstance.TestValue2))
+
+    self.UserInfo.Name = "TestName"
+    self.UserInfo.Age = 18
+    self.UserInfo.bIsMale=false
+
+    print("self.UserInfo.Name = " .. tostring(self.UserInfo.Name), "self.UserInfo.Age = " .. tostring(self.UserInfo.Age), "self.UserInfo.bIsMale = " .. tostring(self.UserInfo.bIsMale))
+    
 
     
 end
